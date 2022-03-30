@@ -249,11 +249,11 @@ arma::vec guess_initial(const std::vector<std::string>& desc, const arma::field<
       } else if(element_type == "WN"){ // WN
         
         if(only_wn || dom_wn){
-          //temp_theta(i_theta) = draw_wn_dom(sigma2_total);
-          temp_theta(i_theta) = 3.9;
+          temp_theta(i_theta) = draw_wn_dom(sigma2_total);
+          //temp_theta(i_theta) = 3.9;
         }else{
-          //temp_theta(i_theta) = draw_wn_weak(sigma2_total);
-          temp_theta(i_theta) = 3.9;
+          temp_theta(i_theta) = draw_wn_weak(sigma2_total);
+          //temp_theta(i_theta) = 3.9;
         }
         
       }else if(element_type == "DR"){   
